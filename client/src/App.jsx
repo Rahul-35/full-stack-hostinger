@@ -1,14 +1,15 @@
 import { useState , useEffect} from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import dotenv from 'dotenv';
 import './App.css'
+
+dotenv.config();
 
 function App() {
 
   const[message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/message')
+    fetch("http://147.79.71.114:5000/api/message")
       .then((response) => response.json())
       .then((data)=>setMessage(data.message))
       .catch((error)=>{
