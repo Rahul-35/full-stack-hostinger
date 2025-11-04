@@ -18,6 +18,7 @@ function App() {
     <>
         <h1>Welcome to frontend</h1>
         <h2>data {message}</h2>
+        <img src='http://147.79.71.114:5000/images/indw.jpg'/>
     </>
   )
 }

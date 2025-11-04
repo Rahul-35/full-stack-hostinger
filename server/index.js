@@ -20,6 +20,8 @@ app.use(cors({
 }));
 
 
+app.use('/images',express.static('images'));
+
 //api route
 
 app.get("/api/message",(req,res)=>{
