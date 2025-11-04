@@ -1,8 +1,5 @@
 import { useState , useEffect} from 'react'
-import dotenv from 'dotenv';
 import './App.css'
-
-dotenv.config();
 
 function App() {
 
